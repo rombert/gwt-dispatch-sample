@@ -10,10 +10,7 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.*;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -27,6 +24,9 @@ public class Application implements EntryPoint {
      */
     public void onModuleLoad() {
 
+        VerticalPanel all = new VerticalPanel();
+        all.add(new HTML("<h1>GWT-dispatch demo</h1>"));
+        
         final Label resultLabel = new Label("No results yet");
         resultLabel.addStyleName("counterResult");
         
@@ -59,7 +59,9 @@ public class Application implements EntryPoint {
 
         panel.add(incrementButton);
         panel.add(resultLabel);
+        
+        all.add(panel);
 
-        RootPanel.get().add(panel);
+        RootPanel.get().add(all);
     }
 }
