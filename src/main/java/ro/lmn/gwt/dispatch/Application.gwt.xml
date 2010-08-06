@@ -7,6 +7,9 @@
       <!--  inherit css based theme -->
       <inherits name='com.google.gwt.user.theme.standard.Standard'/>
 
+	  <!--  GWT dispatch -->
+	  <inherits name='net.customware.gwt.dispatch.Dispatch' />
+
       <!-- Specify the app entry point class.                         -->
       <entry-point class='ro.lmn.gwt.dispatch.client.Application'/>
 
