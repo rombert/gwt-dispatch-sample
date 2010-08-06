@@ -18,5 +18,7 @@
 
       <!-- Specify the application specific style sheet.              -->
       <stylesheet src='Application.css' />
+      
+      <servlet class="ro.lmn.gwt.dispatch.server.SimpleDispatchServlet" path="/dispatch"/>
 
 </module>
