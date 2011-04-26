@@ -3,9 +3,18 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-	<display-name>GWT-Maven-Archetype</display-name>	
+	<display-name>GWT-Maven-Archetype</display-name>
+
+	<filter>
+		<filter-name>guiceFilter</filter-name>
+		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
+	<listener>
+		<listener-class>ro.lmn.gwt.dispatch.guice.server.BootstrapListener</listener-class>
+	</listener>
 </web-app>

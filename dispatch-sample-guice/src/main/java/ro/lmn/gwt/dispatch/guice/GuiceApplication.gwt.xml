@@ -1,0 +1,24 @@
+<!DOCTYPE module PUBLIC "//gwt-module/" "http://google-web-toolkit.googlecode.com/svn/tags/1.6.2/distro-source/core/src/gwt-module.dtd">
+<module>
+
+	  <source path="client"/>
+	  <source path="shared"/>
+
+      <!-- Inherit the core Web Toolkit stuff.                        -->
+      <inherits name='com.google.gwt.user.User'/>
+
+      <!--  inherit css based theme -->
+      <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+	  <!--  GWT dispatch -->
+	  <inherits name='net.customware.gwt.dispatch.Dispatch' />
+
+      <!-- Specify the app entry point class.                         -->
+      <entry-point class='ro.lmn.gwt.dispatch.guice.client.GuiceApplication'/>
+
+      <!-- Specify the application specific style sheet.              -->
+      <stylesheet src='Application.css' />
+      
+      <servlet class="ro.lmn.gwt.dispatch.server.SimpleDispatchServlet" path="/dispatch"/>
+
+</module>
