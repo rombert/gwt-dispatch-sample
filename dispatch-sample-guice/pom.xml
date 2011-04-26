@@ -24,13 +24,15 @@
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>1.2</version>
 				<configuration>
-					<runTarget>ro.lmn.gwt.dispatch.GuiceApplication/GuiceApplication.html</runTarget>
+					<runTarget>ro.lmn.gwt.dispatch.guice.GuiceApplication/GuiceApplication.html</runTarget>
+					<mergedWebXml>war/WEB-INF/web.xml</mergedWebXml>
 				</configuration>
 				<executions>
 					<execution>
 						<goals>
 							<goal>compile</goal>
 							<goal>test</goal>
+							<goal>mergewebxml</goal>							
 						</goals>
 					</execution>
 				</executions>

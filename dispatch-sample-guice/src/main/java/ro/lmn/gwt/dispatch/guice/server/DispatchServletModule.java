@@ -13,6 +13,6 @@ public class DispatchServletModule extends ServletModule {
     @Override
     protected void configureServlets() {
     
-        serve("/ro.lmn.gwt.GwtDispatch/dispatch").with(GuiceStandardDispatchServlet.class);
+        serve("/ro.lmn.gwt.dispatch.guice.GuiceApplication/dispatch").with(GuiceStandardDispatchServlet.class);
     }
 }
