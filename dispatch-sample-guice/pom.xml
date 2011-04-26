@@ -24,7 +24,7 @@
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>1.2</version>
 				<configuration>
-					<runTarget>ro.lmn.gwt.dispatch.Application/Application.html</runTarget>
+					<runTarget>ro.lmn.gwt.dispatch.GuiceApplication/GuiceApplication.html</runTarget>
 				</configuration>
 				<executions>
 					<execution>
@@ -34,14 +34,6 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.1-beta-1</version>
-				<configuration>
-					<webXml>war/WEB-INF/web.xml</webXml>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
