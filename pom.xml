@@ -23,6 +23,7 @@
 	<modules>
 		<module>dispatch-sample-manual</module>
 		<module>dispatch-sample-guice</module>
+		<module>dispatch-sample-spring</module>
 	</modules>
 
 
