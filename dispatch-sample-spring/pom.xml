@@ -5,14 +5,14 @@
 	<parent>
 		<artifactId>dispatch-sample</artifactId>
 		<groupId>ro.lmn.gwt.dispatch</groupId>
-		<version>1.1</version>
+		<version>1.2</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ro.lmn.gwt.dispatch</groupId>
 	<artifactId>dispatch-sample-spring</artifactId>
 	<packaging>war</packaging>
-	<version>1.1</version>
+	<version>1.2</version>
 	<name>GWT-Dispatch Sample: Spring configuration</name>
 
 	<build>
